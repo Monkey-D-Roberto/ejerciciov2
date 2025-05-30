@@ -7,7 +7,6 @@ import java.util.List;
 import java.util.function.Function;
 
 public class FamiliaMapper {
-    //comentario de prueba para ver cambios
     private FamiliaMapper(){
     }
     public static FamiliaDto fromEntity(FamiliaEntity entity){
@@ -27,6 +26,7 @@ public class FamiliaMapper {
                 .dateDelet(entity.getDateDelet())
                 .build();
     }
+    //comentario de prueba para ver cambios
     public static  <T, R> List<R> mapList(List<T> list, Function<T, R> mapper) {
 
         return list != null
